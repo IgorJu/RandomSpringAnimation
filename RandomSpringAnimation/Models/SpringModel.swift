@@ -7,23 +7,23 @@
 
 import Foundation
 
-struct ViewModel {
+struct Animation {
     var preset: String
     var curve: String
     
-    var force: Double
-    var duration: Double
+    var force: CGFloat
+    var duration: CGFloat
     
-    static func getDefaultValues() -> ViewModel {
-        let animation = DataStoreRandomValues.shared.animation
-        let newAnimation = ViewModel(
-            preset: animation.preset,
-            curve: animation.curve,
-            force: animation.force,
-            duration: animation.duration
-        )
-        return newAnimation
+    static func getRandomValues() -> Animation {
+        let animations = DataStoreRandomValues.shared
+        let animation = Animation(
+            preset: animations.presets.randomElement()?.rawValue ?? "",
+            curve: animations.curves.randomElement()?.rawValue ?? "",
+            force: CGFloat.random(in: 0.5...1.5),
+            duration: CGFloat.random(in: 0.5...1.5))
+        return animation
     }
+    
 }
 
 

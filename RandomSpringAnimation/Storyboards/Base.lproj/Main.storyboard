@@ -9,19 +9,19 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Animation View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RandomSpringAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AnimationViewController" customModule="RandomSpringAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4mf-hJ-ofs">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4mf-hJ-ofs" customClass="SpringView" customModule="SpringAnimation">
                                 <rect key="frame" x="30" y="143" width="333" height="150"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5aa-5O-NW0">
-                                        <rect key="frame" x="8" y="13.333333333333336" width="155" height="123.33333333333331"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5aa-5O-NW0">
+                                        <rect key="frame" x="8" y="13.333333333333336" width="145" height="123.33333333333331"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="ix7-sc-jCS">
                                                 <rect key="frame" x="0.0" y="0.0" width="69.666666666666671" height="123.33333333333333"/>
@@ -53,7 +53,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="cjc-jb-5ex">
-                                                <rect key="frame" x="89.666666666666686" y="0.0" width="65.333333333333314" height="123.33333333333333"/>
+                                                <rect key="frame" x="79.666666666666686" y="0.0" width="65.333333333333314" height="123.33333333333333"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preset" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOj-rE-RpF">
                                                         <rect key="frame" x="0.0" y="0.0" width="65.333333333333329" height="20.333333333333332"/>
@@ -94,13 +94,17 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egS-wo-II3">
                                 <rect key="frame" x="30" y="704.66666666666663" width="333" height="34.333333333333371"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Run"/>
+                                <connections>
+                                    <action selector="runButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NMu-ub-hVP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -118,9 +122,9 @@
                         <outlet property="curveLabel" destination="BFk-Rh-GIp" id="FIp-fn-uzB"/>
                         <outlet property="durationLabel" destination="7Kx-Qj-khD" id="agv-Lh-P0f"/>
                         <outlet property="forceLabel" destination="8RB-Xg-a54" id="vvE-3k-A4p"/>
-                        <outlet property="movingView" destination="4mf-hJ-ofs" id="tWb-vF-W3u"/>
                         <outlet property="presetLabel" destination="fOj-rE-RpF" id="MXL-bq-q0a"/>
                         <outlet property="runAnimationButton" destination="egS-wo-II3" id="D1M-YP-nLf"/>
+                        <outlet property="springAnimationView" destination="4mf-hJ-ofs" id="Q03-pK-ncE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

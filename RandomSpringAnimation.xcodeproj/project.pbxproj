@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		780959D12A02A78B0043E722 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780959D02A02A78B0043E722 /* AppDelegate.swift */; };
 		780959D32A02A78B0043E722 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780959D22A02A78B0043E722 /* SceneDelegate.swift */; };
-		780959D52A02A78B0043E722 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780959D42A02A78B0043E722 /* ViewController.swift */; };
+		780959D52A02A78B0043E722 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780959D42A02A78B0043E722 /* AnimationViewController.swift */; };
 		780959D82A02A78B0043E722 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780959D62A02A78B0043E722 /* Main.storyboard */; };
 		780959DA2A02A78C0043E722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780959D92A02A78C0043E722 /* Assets.xcassets */; };
 		780959DD2A02A78C0043E722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780959DB2A02A78C0043E722 /* LaunchScreen.storyboard */; };
@@ -22,7 +22,7 @@
 		780959CD2A02A78B0043E722 /* RandomSpringAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomSpringAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		780959D02A02A78B0043E722 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		780959D22A02A78B0043E722 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		780959D42A02A78B0043E722 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		780959D42A02A78B0043E722 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		780959D72A02A78B0043E722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		780959D92A02A78C0043E722 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		780959DC2A02A78C0043E722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,9 +64,9 @@
 			children = (
 				780959E72A02A8DF0043E722 /* ViewControllers */,
 				780959E52A02A8C50043E722 /* Storyboards */,
-				780959E62A02A8D10043E722 /* Resources */,
 				780959F02A02AEDD0043E722 /* Services */,
 				780959EA2A02A90D0043E722 /* Models */,
+				780959E62A02A8D10043E722 /* Resources */,
 				780959E42A02A8B60043E722 /* App */,
 			);
 			path = RandomSpringAnimation;
@@ -102,7 +102,7 @@
 		780959E72A02A8DF0043E722 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				780959D42A02A78B0043E722 /* ViewController.swift */,
+				780959D42A02A78B0043E722 /* AnimationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -201,7 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				780959E92A02A9010043E722 /* SpringModel.swift in Sources */,
-				780959D52A02A78B0043E722 /* ViewController.swift in Sources */,
+				780959D52A02A78B0043E722 /* AnimationViewController.swift in Sources */,
 				780959D12A02A78B0043E722 /* AppDelegate.swift in Sources */,
 				780959EF2A02AED00043E722 /* DataStore.swift in Sources */,
 				780959D32A02A78B0043E722 /* SceneDelegate.swift in Sources */,

@@ -19,8 +19,8 @@ struct Animation {
         let animation = Animation(
             preset: animations.presets.randomElement()?.rawValue ?? "",
             curve: animations.curves.randomElement()?.rawValue ?? "",
-            force: CGFloat.random(in: 0.5...1.5),
-            duration: CGFloat.random(in: 0.5...1.5))
+            force: Double.random(in: 0.5...1.5),
+            duration: Double.random(in: 0.5...1.5))
         return animation
     }
     

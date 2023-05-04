@@ -10,11 +10,7 @@ import SpringAnimation
 
 final class AnimationViewController: UIViewController {
     
-    @IBOutlet var curveLabel: UILabel!
-    @IBOutlet var forceLabel: UILabel!
-    @IBOutlet var presetLabel: UILabel!
-    @IBOutlet var durationLabel: UILabel!
-    
+    @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var springAnimationView: SpringView!
     @IBOutlet var runAnimationButton: UIButton!
     
@@ -22,21 +18,15 @@ final class AnimationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupLabels()
+        descriptionLabel.text = animation.description
     }
     
     @IBAction func runButtonTapped(_ sender: UIButton) {
         getAnimation()
-        setupLabels()
+        descriptionLabel.text = animation.description
+        
         animation = Animation.getRandomValues()
         sender.setTitle(animation.preset, for: .normal)
-    }
-    
-    private func setupLabels() {
-        presetLabel.text = animation.preset
-        curveLabel.text = animation.curve
-        forceLabel.text = String(format: "%.2f", animation.force)
-        durationLabel.text = String(format: "%.2f", animation.duration)
     }
     
     private func getAnimation() {

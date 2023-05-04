@@ -8,9 +8,9 @@
 import Foundation
 import SpringAnimation
 
-final class DataStoreRandomValues {
+final class DataStore {
     
-    static let shared = DataStoreRandomValues()
+    static let shared = DataStore()
 
     let presets = AnimationPreset.allCases
     let curves = AnimationCurve.allCases

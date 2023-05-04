@@ -13,7 +13,7 @@
 		780959D82A02A78B0043E722 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780959D62A02A78B0043E722 /* Main.storyboard */; };
 		780959DA2A02A78C0043E722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780959D92A02A78C0043E722 /* Assets.xcassets */; };
 		780959DD2A02A78C0043E722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780959DB2A02A78C0043E722 /* LaunchScreen.storyboard */; };
-		780959E92A02A9010043E722 /* SpringModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780959E82A02A9010043E722 /* SpringModel.swift */; };
+		780959E92A02A9010043E722 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780959E82A02A9010043E722 /* Animation.swift */; };
 		780959ED2A02A9440043E722 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 780959EC2A02A9440043E722 /* SpringAnimation */; };
 		780959EF2A02AED00043E722 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780959EE2A02AED00043E722 /* DataStore.swift */; };
 /* End PBXBuildFile section */
@@ -27,7 +27,7 @@
 		780959D92A02A78C0043E722 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		780959DC2A02A78C0043E722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		780959DE2A02A78C0043E722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		780959E82A02A9010043E722 /* SpringModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringModel.swift; sourceTree = "<group>"; };
+		780959E82A02A9010043E722 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		780959EE2A02AED00043E722 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,7 +110,7 @@
 		780959EA2A02A90D0043E722 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				780959E82A02A9010043E722 /* SpringModel.swift */,
+				780959E82A02A9010043E722 /* Animation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -200,7 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				780959E92A02A9010043E722 /* SpringModel.swift in Sources */,
+				780959E92A02A9010043E722 /* Animation.swift in Sources */,
 				780959D52A02A78B0043E722 /* AnimationViewController.swift in Sources */,
 				780959D12A02A78B0043E722 /* AppDelegate.swift in Sources */,
 				780959EF2A02AED00043E722 /* DataStore.swift in Sources */,

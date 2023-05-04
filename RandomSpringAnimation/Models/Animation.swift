@@ -8,19 +8,28 @@
 import Foundation
 
 struct Animation {
-    var preset: String
-    var curve: String
+    let preset: String
+    let curve: String
     
-    var force: CGFloat
-    var duration: CGFloat
+    let force: Double
+    let duration: Double
+    var description: String {
+        """
+Preset: \(preset)
+Curve: \(curve)
+Force: \(String(format: "%.2f", force))
+Duration: \(String(format: "%.2f",duration))
+"""
+    }
     
     static func getRandomValues() -> Animation {
-        let animations = DataStoreRandomValues.shared
+        let animations = DataStore.shared
         let animation = Animation(
             preset: animations.presets.randomElement()?.rawValue ?? "",
             curve: animations.curves.randomElement()?.rawValue ?? "",
             force: Double.random(in: 0.5...1.5),
-            duration: Double.random(in: 0.5...1.5))
+            duration: Double.random(in: 0.5...1.5)
+        )
         return animation
     }
     
